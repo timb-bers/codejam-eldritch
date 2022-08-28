@@ -1,0 +1,339 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: wheat;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+pre,
+code {
+  margin: 0;
+}
+
+pre {
+  white-space: nowrap;
+}
+
+hr {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  min-width: 320px;
+  background: url('assets/home.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+}
+
+.ancient-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  pointer-events: none;
+}
+
+
+.azathoth-style,
+.cthulhu-style,
+.iogSothoth-style,
+.shubNiggurath-style {
+  margin: 5px;
+  cursor: pointer;
+  transition: all .5s ease;
+  border-radius: 10px;
+  pointer-events: auto;
+}
+
+.azathoth-style:active {
+  border: 0;
+  outline: 0;  
+  transform: scale(1.2);
+}
+
+.azathoth-style:hover {
+  opacity: .7;
+}
+
+.cthulhu-style:active {
+  border: 0;
+  outline: 0;  
+  transform: scale(1.2);
+}
+
+.cthulhu-style:hover {
+  opacity: .7;
+}
+
+.iogSothoth-style:active {
+  border: 0;
+  outline: 0;  
+  transform: scale(1.2);
+}
+
+.iogSothoth-style:hover {
+  opacity: .7;
+}
+
+.shubNiggurath-style:active {
+  border: 0;
+  outline: 0;  
+  transform: scale(1.2);
+}
+
+.shubNiggurath-style:hover {
+  opacity: .7;
+}
+
+.azathoth-style{
+  display: flex;
+  height: 350px;
+  width: 250px;
+  /* background: url('assets/Ancients/Azathoth.png'); */
+  background-repeat: no-repeat;
+  background-size:
+  cover;
+  background-blend-mode: multiply;
+  background-position: center;
+}
+
+.cthulhu-style{
+  display: flex;
+  height: 350px;
+  width: 250px;
+  /* background: url('assets/Ancients/Cthulthu.png'); */
+  background-repeat: no-repeat;
+  background-size:
+  cover;
+  background-blend-mode: multiply;
+  background-position: center;
+}
+
+.iogSothoth-style{
+  display: flex;
+  height: 350px;
+  width: 250px;
+  /* background: url('assets/Ancients/IogSothoth.png'); */
+  background-repeat: no-repeat;
+  background-size:
+  cover;
+  background-blend-mode: multiply;
+  background-position: center;
+}
+
+.shubNiggurath-style{
+  display: flex;
+  height: 350px;
+  width: 250px;
+  /* background: url('assets/Ancients/ShubNiggurath.png'); */
+  background-repeat: no-repeat;
+  background-size:
+  cover;
+  background-blend-mode: multiply;
+  background-position: center;
+}
+
+.level{
+  display: flex;
+  width: 30%;
+}
+
+.level-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  color: wheat;
+  text-align: center;
+  transition: all .5s ease;
+  width: 100%;
+}
+
+.level-item {
+  padding: 5px;
+  border: 2px solid;
+  transition: all .5s ease;
+  cursor: pointer;
+  user-select: none;
+  width: 200px;
+  text-align: center;
+}
+
+.level-item-active {
+  color: red;
+}
+
+.level-item:hover {
+  transform: scale(1.1);
+}
+
+.deck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.stage {
+  width: 100%;
+}
+
+.deck span {
+  font-size: 18px;
+  line-height: 28px;
+  user-select: none;
+}
+
+.span-active {
+  color: red;
+}
+
+.stage1-wrapper,
+.stage2-wrapper,
+.stage3-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.stage1-list,
+.stage2-list,
+.stage3-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.stage1-item,
+.stage2-item,
+.stage3-item {
+  padding: 5px 15px 5px 15px;
+  margin: 5px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  text-align: center;
+  color: inherit;
+  font-size: 18px;
+  user-select: none;
+}
+
+.green {
+  background: green;
+}
+
+.brown {
+  background: brown;
+}
+
+.blue {
+  background: blue
+}
+
+.deck-card-close{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 150px;
+  /* background: url('assets/mythicCardBackground.png'); */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-blend-mode: multiply;
+  background-position: center;
+  cursor: pointer;
+  transition: all .5s ease;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+.deck-card-close:active{
+  transform: scale(1.1);
+}
+
+.deck-card-open{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  cursor: pointer;
+  transition: all .5s ease;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+.deck-visible {
+  display: none;
+}
+
+.active {
+  background: #9F7C3A;
+}
+
+.active-card {
+  border: 2px solid #9F7C3A;
+}
